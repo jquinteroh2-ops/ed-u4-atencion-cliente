@@ -1,7 +1,7 @@
 package atencion.servicio;
 
 /**
- * Datos de prueba: 25 elementos en el catálogo (4 niveles, altura 3)
+ * Datos de prueba: 26 elementos en el catálogo (4 niveles, altura 3)
  * y 15 áreas con 20 escalamientos en la red.
  *
  * La red incluye a propósito:
