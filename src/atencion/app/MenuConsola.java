@@ -431,7 +431,11 @@ public class MenuConsola {
     private String leer(String mensaje) {
         System.out.print(mensaje);
         try {
-            return entrada.nextLine();
+            String linea = entrada.nextLine();
+            if (System.console() == null) {
+                System.out.println(linea);   // entrada redirigida (pruebas): se muestra lo que se "escribió"
+            }
+            return linea;
         } catch (NoSuchElementException e) {
             System.out.println();
             System.exit(0);
